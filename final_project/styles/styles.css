@@ -85,7 +85,11 @@ nav a:hover {
   grid-row: 2/3;
   text-align: center;
   color: white;
-  background-color: rgb(96, 0, 0, .35);
+  background-color: rgb(96, 0, 0, .5);
+}
+
+.quote {
+  font-family: 'Kanit', sans-serif;
 }
 
 
@@ -107,7 +111,7 @@ rgb(247, 157, 92)
 footer {
   background-color: #600000;
   color: #F79D5C;
-  padding: 25px 50px;
+  padding: 15px 20px;
   margin-top: 100px;
   display: flex;
   justify-content: space-around;
@@ -117,6 +121,8 @@ footer {
 footer a {
   color: #F79D5C;
   text-decoration: none;
+  text-align: center;
+  padding: 20px;
 }
 
 footer a:hover {
@@ -127,10 +133,6 @@ footer a:hover {
 
 footer p {
   font-size: 1.2em;
-}
-
-footer p a:hover {
-  text-decoration: none;
 }
 
 
