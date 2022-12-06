@@ -26,14 +26,14 @@ header {
 }
 
 #logo_link {
-  padding-top: 5px;
   justify-self: center;
   align-self: center;
 }
 
-.logo {
+header .logo {
   border-radius: 50%;
   width: 3.5em;
+  padding: 15px;
 }
 
 nav {
@@ -99,18 +99,29 @@ rgb(247, 157, 92)
 
 */
 
-
-
 .page_title {
+  text-align: center;
+}
+
+.page_title .logo {
+  border-radius: 50%;
+  width: 6em;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.page_title h3 {
   font-family: 'Kanit', sans-serif;
   font-size: 4em;
-  margin: 20px;
+  margin: 0;
+  padding: 0;
   text-align: center;
   color: white;
 }
 
 #muscles_grid {
   padding: 40px;
+  padding-top: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -254,6 +265,7 @@ form {
   /* Center the form on the page */
   margin: 30px auto;
   width: 600px;
+  margin-bottom: 100px;
   /* Form outline */
   padding: 1em;
   border: 5px solid #600000;
@@ -374,4 +386,5 @@ textarea {
   background-color: #ddd;
   display: none;
   overflow: hidden;
+  text-align: left;
 }
