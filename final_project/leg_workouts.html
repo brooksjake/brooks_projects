@@ -38,7 +38,7 @@
             <a id="logo_link" href="index.html">
                 <img class="logo" src="images/logo.png" alt="Muscle Up Logo">
             </a>
-            <h3>Leg</h3>
+            <h3>Legs</h3>
         </div>
 
         <div id="exercises_accordion">
@@ -79,7 +79,26 @@
                 <a href="https://www.instagram.com" class="fa fa-instagram" target="_blank"></a>
             </div>
         </footer>
-
     </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }
+    </script>
 </body>
 </html>
