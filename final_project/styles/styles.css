@@ -22,7 +22,7 @@ header {
   margin-bottom: 30px;
 }
 
-#logo_link {
+.logo_link {
   justify-self: center;
   align-self: center;
 }
