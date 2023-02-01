@@ -108,6 +108,10 @@ main {
     margin-bottom: 1rem;
 }
 
+#items .item .content {
+    flex: 1 1 0%;
+}
+
 #items .item .content .text {
     color: var(--light);
     font-size: 1.125rem;
