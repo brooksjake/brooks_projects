@@ -1,0 +1,158 @@
+:root{
+    --dark: #374151;
+    --darker: #1f2937;
+    --darkest: #111827;
+    --gray: #6b7280;
+    --light: #eee;
+    --pink: #ec4899;
+    --purple: #8b5cf6;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    /* font-family: ; */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--dark);
+    color: white;
+}
+
+header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+
+#new-list-item {
+    display: flex;
+}
+
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#new-item-input {
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--light);
+    font-size: 1.25rem;
+}
+
+#new-item-input::placeholder {
+    color: var(--gray);
+}
+
+#add-item-submit {
+    color: var(--pink);
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#add-item-submit:hover {
+    opacity: .8;
+}
+
+#add-item-submit:active {
+    opacity: .6;
+}
+
+main {
+    flex: 1 1 0%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.list {
+    padding: 1rem;
+}
+
+.list h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+
+#items .item {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkest);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+#items .item .content .text {
+    color: var(--light);
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+    transition: .4s;
+
+}
+
+#items .item .content .text:not(:read-only) {
+    color: var(--pink);
+}
+
+#items .item .actions {
+    display: flex;
+    margin: 0 -.5rem;
+}
+
+.item .actions button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: .4s;
+
+}
+
+.item .actions button:hover {
+    opacity: .8;
+}
+
+.item .actions button:active {
+    opacity: .6;
+}
+
+.item .actions .edit {
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.item .actions .delete {
+    color: crimson;
+}
+
+
+
