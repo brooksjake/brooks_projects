@@ -3,6 +3,20 @@ window.addEventListener('load', () => {
     const input = document.querySelector("#new-item-input");
     const list_el = document.querySelector("#items");
 
+    const personal_btn = document.querySelector("#personal-btn");
+    const work_btn = document.querySelector("work-btn");
+    const school_btn = document.querySelector("school-btn");
+    const other_btn = document.querySelector("other-btn");
+
+    let active_type = personal_btn
+
+    personal_btn.addEventListener('click', () => {
+        if (active_type != personal_btn) {
+            active_type = personal_btn;
+        }
+        set_shadows(active_type, personal_btn, work_btn, school_btn, other_btn);
+    });
+
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 
@@ -63,3 +77,7 @@ window.addEventListener('load', () => {
         });
     });
 });
+
+function set_shadows(active_type, personal_btn, work_btn, school_btn, other_btn) {
+    
+}
