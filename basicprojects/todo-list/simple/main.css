@@ -75,7 +75,8 @@ input, button {
     color: var(--pink);
     font-size: 1.25rem;
     font-weight: 700;
-    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    /* background-image: linear-gradient(to right, var(--pink), var(--purple)); */
+    background-image: linear-gradient(to right, #e37036, #fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;

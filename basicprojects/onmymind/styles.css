@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&display=swap');
+/* font-family: 'Libre Baskerville', serif;
+font-family: 'Montserrat', sans-serif; */
+
+:root {
+    --base: #2f4f4f;
+    --titles: #4B9880;
+    --overlay: #202f2f;
+    --light: #ffe3d5;
+    --sunset: #e37036;
+    --green: #A5FFA7;
+    --danger: #ff5b57;
+    --shadow: 0 1ps 3px rgba(0,0,0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: var(--base);
+    color: var(--titles);
+    padding: 1rem 20%;
+}
+
+main {
+    flex: 1 1 0%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: initial;
+}
+
+.title {
+    display: block;
+    width: 100%;
+}
+
+.title h1 {
+    font-size: 4rem;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.title input {
+    background-color: var(--base);
+    color: var(--titles);
+    margin-top: .5rem;
+    font-size: 2rem;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.title input::placeholder {
+    color: var(--overlay);
+}
+
+.create-thought {
+    display: flex;
+}
+
+#new-thought-form #content {
+    flex: 1 1 0%;
+    background-color: var(--overlay);
+    color: var(--light);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--light);
+    font-size: 1.25rem;
+}
+
+#new-thought-form #content::placeholder {
+    color: var(--titles);
+}
+
+#add-btn {
+    color: var(--sunset);
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, var(--green), white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#add-btn:hover {
+    opacity: .7;
+}
+
+#add-btn:active {
+    opacity: .5;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    border-top: 3px solid var(--overlay);
+}
+
+
+.thought-notes {
+    padding: 1rem;
+}
+
+.thought-notes h3 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: 'Libre Baskerville', serif;
+}
+
+#thought-list .thought-item{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--overlay);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+#thought-list .thought-item .thought-content {
+    flex: 1 1 0%;
+}
+
+#thought-list .thought-item .thought-content .text {
+    color: var(--light);
+    font-size: 1.25rem;
+    width: 100%;
+    display: block;
+    transition: .4s;
+}
+
+#thought-list .thought-item .thought-content .text:not(:read-only) {
+    color: var(--sunset);
+}
+
+#thought-list .thought-item .actions {
+    display: flex;
+    margin: 0 -.5rem;
+}
+
+.thought-item .actions button {
+    cursor: pointer;
+    margin: 0 .5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: .4s;
+    color: var(--sunset);
+}
+
+.thought-item .actions button:hover {
+    opacity: .7;
+}
+
+.thought-item .actions button:active {
+    opacity: .5;
+}
+
+.thought-item .actions .edit {
+    background-image: linear-gradient(to right, var(--green), white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.thought-item .actions .delete {
+    color: var(--danger);
+}
+
+
+
+
+
