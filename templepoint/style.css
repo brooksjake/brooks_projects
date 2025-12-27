@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.hero {
+    background-image: url('media/Washington-DC-Temple.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.blurb {
+    font-size: 1.2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.grid-item {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #ccc;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 8px;
+}
+
+.grid-item:hover {
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #222;
+}
+
+.footer img {
+    max-width: 100%;
+    height: auto;
+}
